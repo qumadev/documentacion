@@ -1,0 +1,50 @@
+> git clone link_proyecto (clonar el repositorio)
+
+Nota: Antes que nada, NUNCA hagan cambios dentro de la rama 'main' o 'master',
+      para ello, creen su propia rama, por ejemplo: 
+
+rama_adrian
+rama_andy
+rama_sanchez
+rama_poma
+rama_hans
+
+Pasos:
+1. git checkout -b nombre_nueva_rama (creacion y paso a la nueva rama)
+
+Ojo: ahora dentro de su rama hagan todos los cambios que quieran sin tocar
+     directorios,metodos o clases de otro integrante(por ejemplo del pelao de hans)
+
+*comandos basicos para usar git (repositorio local)
+1. git init (inciar el proyecto con git, esto se obvia cuando usas git clone)
+2. git add . (para pasar los archivos al staging area) <-obligatorio
+3. git commit -m "nombre_del_commit" (para pasar los nuevos cambios al repositorio local)
+
+*comandos basicos para subir y traer cambios de github (repositorio remoto)
+1. git pull origin tu_rama (traer cambios de su rama) <- opcional
+2. git push origin tu_rama (subir sus cambios) <- obligatorio
+
+PD: si les aparece algun error en el terminal, hagan: git pull origin main
+
+Ayuda: si quieren ver aquello que avanzo otro integrante, sigan los sgtes. pasos:
+1.git stash (guarda tus cambios en cache sin comitear)
+2.git branch (visualizar todas las ramas creadas)
+3.git checkout rama_otro_integrante (pasar a la rama de otro)
+
+Ojo: ahora puedes visualizar todo el codigo de otro integrante,
+     pero no debes tocar nada del codigo.
+
+4.git checkout tu_rama (volver a tu rama para continuar trabajando) <- OBLIGATORIO Y MAS IMPORTANTE
+
+
+NOTON: si ya empezaste tu repositorio local y quieres subirlo a un repositorio 
+     remoto(link_repositorio_remoto), haz el siguiente comando:
+     
+> git remote add origin link_repositorio_remoto
+
+
+UNIR RAMAS: para traer cambios de una ramaX a la rama actual, se utiliza el sgte comando
+
+> git merge ramaX
+
+Explicacion: aqui se esta traendo los cambios de la ramaX a la rama actual
